@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Catalog with Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ---------- LOGIN SECTION ---------- -->
+  <div class="login-container" id="loginPage">
+    <div class="login-box">
+      <h2>Login to Continue</h2>
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button onclick="login()">Login</button>
+      <p id="errorMsg" class="error"></p>
+    </div>
+  </div>
+
+  <!-- ---------- PRODUCT CATALOG SECTION ---------- -->
+  <div class="catalog" id="catalogPage">
+    <div class="header">
+      <h2>🛍️ Product Catalog</h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150" alt="Product 1" />
+        <h3>Product 1</h3>
+        <p>₹499</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150" alt="Product 2" />
+        <h3>Product 2</h3>
+        <p>₹699</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150" alt="Product 3" />
+        <h3>Product 3</h3>
+        <p>₹899</p>
+      </div>
+
+      <div class="product-card">
+        <img src="https://via.placeholder.com/200x150" alt="Product 4" />
+        <h3>Product 4</h3>
+        <p>₹999</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
